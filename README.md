@@ -4,7 +4,7 @@ A clone of [Obtvse](http://github.com/NateW/obtvse).
 
 About
 -----
-Runs on nodejs v0.6.12
+Runs on node.js v0.6.12
 
 Configuration
 -------------
