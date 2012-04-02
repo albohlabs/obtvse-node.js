@@ -1,0 +1,30 @@
+div#drafts.col
+  h1 Drafts
+    a.button(href='/post/create') New Draft
+  form.new_post#new_post(method='post', action='/post/create', accept-charset='UTF-8')
+    input#post_title(name='title', placeholder='start typing yout title ...', size='30', type='text', tabindex='1')
+  ul
+    - if ( drafts && drafts.length)
+      - each draft in drafts
+        li
+          h3
+            a(href='/post/edit/' + draft.id)
+              != draft.title_markup
+          span.links
+            a.admin-view(href='/post/preview/' + draft.id) view
+            a.admin-view(href='/post/edit/' + draft.id) edit
+            a.admin-delete(data-confirm='Are you sure?', data-method='delete', rel='nofollow', href='/post/remove/' + draft.id) x
+div#published.col
+  h2 Published
+    a.button(href='/') Home
+  ul
+    - if(publish && publish.length)
+      - each post in publish
+        li
+          h3
+            a(href='/post/single/' + post.id)
+              != post.title_markup
+          span.links
+            a.admin-view(href='/post/single/' + post.id) view
+            a.admin-view(href='/post/edit/' + post.id) edit
+            a.admin-delete(data-confirm='Are you sure?', data-method='delete', rel='nofollow', href='/post/remove/' + post.id) x

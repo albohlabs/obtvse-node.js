@@ -1,0 +1,22 @@
+!!! 5
+html
+  head
+    title alboh blog
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,900')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body.index.posts
+    header
+      h1
+        a(href='/') alboh laboratories
+      span blog
+      ul
+        li
+          a(href='https://twitter.com/#!/albohlabs', target='_blank') twitter
+        li
+          a(href='https://plus.google.com/u/0/107422778697510876292/posts', target='_blank') g+
+      span.powered-by Powered by 
+        a(href='http://nodejs.org/', target='_blank') Node.js
+        &nbsp;·
+        a(href='/admin') Admin
+    body!= body
+    script(src='/javascripts/script.js')

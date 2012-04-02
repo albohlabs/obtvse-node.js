@@ -1,0 +1,16 @@
+div#container.show
+  time
+    != post.created
+  div#content
+      section
+        div.post.contain
+          h1.aside
+            != post.title_html
+          != post.content_html
+          - if(isAuth)
+            ul.actions
+              li
+                a(href='/post/edit/' + post.id) Edit
+              li
+                a(href='/post/remove/' + post.id) Remove
+        a.button.space-top(href='/') Back to Blog

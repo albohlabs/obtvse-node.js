@@ -1,0 +1,22 @@
+- if(typeof error !== 'undefined')
+  p 
+    b ERROR!
+    = error
+form.new_post#new_post(action='/admin/login', method='post', name='login', accept-charset='UTF-8')
+  div.contain
+    div#text-title.active.expandingArea
+      pre
+        span
+        br
+        br
+      input(tabindex=1, name='username', placeholder='Your username', style='text-align: center')
+    fieldset.markdown
+      div#text-content.expandingArea.active
+        pre
+          span
+          br
+        input(tabindex=2, name='password', type='password', placeholder='Write your password here', style='text-align: center')
+  div#publish-bar
+    div.contain
+      div.right
+        input#save-button(tabindex=3, type='submit', value='Save')

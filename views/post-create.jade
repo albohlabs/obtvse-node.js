@@ -1,0 +1,22 @@
+form.new_post#new_post(action='/post/save', method='post', name='login', accept-charset='UTF-8')
+  div.contain
+    div#text-title.active.expandingArea
+      pre
+        span
+        br
+      textarea(tabindex=1, name='title', placeholder='Title here')
+        != title
+    fieldset.markdown.image
+      div#text-content.expandingArea.active
+        pre
+          span
+          br
+        textarea(tabindex=2, name='password', name='markup', type='password', placeholder='Write post here')
+  div#publish-bar
+    div.contain
+      div.left
+        a(href='/admin') « Admin
+      div.right
+        label(for='post_draft') Draft&nbsp;
+        input#post_draft(checked='checked', name='draft', value='1', type='checkbox')
+        input#save-button(tabindex=3, type='submit', value='Save')

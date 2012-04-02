@@ -1,0 +1,28 @@
+div#container
+  time
+    != date
+  div#content
+    - if ( !posts || !posts.length)
+      section 
+        | No posts to show.
+        a(href='/admin') Go to admin?
+    - else
+      - each post in posts
+        section
+          div.post.contain
+            h1.aside
+              a(href='/post/single/' + post.id)
+                != post.title_html
+            != post.content_html
+            - if(isAuth)
+              ul.actions
+                li
+                  a(href='/post/edit/' + post.id) Edit
+    nav.pagination
+      -if(paging.l)
+        span.prev
+          a(href='/page/' + page.prev, rel='prev') < Previous
+      &nbsp;
+      -if(paging.r)
+        span.next
+          a(href='/page/' + page.next, rel='next') Next >
