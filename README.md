@@ -8,7 +8,7 @@ Runs on nodejs v0.6.12
 
 Configuration
 -------------
-Add DB information into config.json.
+Set database and login information into the config.json.
 
 Then run `node app.js` in order to start the server.
 
