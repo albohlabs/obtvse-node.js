@@ -18,3 +18,8 @@ Screenshots
 ![Admin](http://i.imgur.com/hfnm9.png)
 ![Draft](http://i.imgur.com/x4lXL.png)
 ![Live](http://i.imgur.com/wbVJN.png)
+
+License
+-------
+Copyright (c) 2012 Daniel Gräber
+Licensed under the MIT license.
