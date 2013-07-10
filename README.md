@@ -17,5 +17,4 @@ Then run `node app.js` in order to start the server.
 ![Live](http://i.imgur.com/wbVJN.png)
 
 ## License
-Copyright (c) 2012 Daniel Gräber  
-Licensed under the MIT license.
+nodeblog is free and open source software, released under the terms of the [GNU General Public License version 3](http://www.gnu.org/licenses/gpl.html)
