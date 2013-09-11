@@ -1,25 +1,20 @@
 nodeblog
 ========
-A clone of [Obtvse](http://github.com/NateW/obtvse).
+[Obtvse](http://github.com/NateW/obtvse) clone
 
-About
------
+## About
 Runs on node.js v0.6.12
 
-Configuration
--------------
+## Configuration
 Set MySql database and login information into the config.json.
 
 Then run `node app.js` in order to start the server.
 
 
-Screenshots
------------
+## Screenshots
 ![Admin](http://i.imgur.com/hfnm9.png)
 ![Draft](http://i.imgur.com/x4lXL.png)
 ![Live](http://i.imgur.com/wbVJN.png)
 
-License
--------
-Copyright (c) 2012 Daniel Gräber
-Licensed under the MIT license.
+## License
+nodeblog is free and open source software, released under the terms of the [GNU General Public License version 3](http://www.gnu.org/licenses/gpl.html)
